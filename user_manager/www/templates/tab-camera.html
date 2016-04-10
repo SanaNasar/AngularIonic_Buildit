@@ -1,0 +1,11 @@
+<ion-view view-title="Camera">
+  <ion-content padding="40">
+    <button ng-click="takePicture();" class="button button-full button-positive">
+      Click Me!
+    </button>
+    <div>
+      <img style="width:100%; display:block;" 
+      ng-src="{{picture_taken}}" />
+    </div>
+  </ion-content>
+</ion-view>
