@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="todoApp">
+  <head>
+      <meta charset="UTF-8" />
+      <title>Todo List</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js">
+      </script>
+      <script src="app.js"></script>
+  </head>
+  <body ng-controller="todoCtrl">
+
+    <div>
+      <input type="text" placeholder="What do you want to do?" ng-model="todoText" />
+      <button ng-click="submitTodo();">Submit Todo</button>
+    </div>
+
+    <div>
+      <ul>
+     <!--    todo in todos is like singular in plural -->
+        <li ng-repeat="todo in todos">
+          <span> {{todo}} </span>
+          <button>Delete</button>
+        </li>
+      </ul>
+    </div>
+  
+  </body>
+</html>
